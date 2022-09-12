@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luxurious+Roman&family=Moo+Lah+Lah&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body{
+  font-family:'Work Sans'cursive;
+  border: solid 2px red
+}
+h1, h2, h3{
+  font-family: "Fredoka One", bold;
+}
+
+
+/*
+way to have everything in one font:
+h1, h2, h3, p, li, a {font-family:cursive;}
+or
+body {font-family:cursive;}
+if I want all the h's to be a different font you can do
+h2{font-family: serif};
+
+this if for borders:
+type like solid or dash, thickness and color
+
+to get other fonts you can import it through a link from google fonts once you link it in then you add it in into the the body or headers
+
+*/

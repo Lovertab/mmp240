@@ -1,14 +1,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luxurious+Roman&family=Moo+Lah+Lah&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+*{
+  margin:0;
+  padding:0;
+}
+/* the * is unviersal so its for the whole page*/
+
+html{
+  font-size: 16px;
+  background-color: turquoise;
+}
+/* this is the refernce point for rem font-size*/
+
 body{
   font-family:'Work Sans'cursive;
-  border: solid 2px red
+  width:1000px;
+  border: solid black 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
 }
-h1, h2, h3{
-  font-family: "Fredoka One", bold;
+/*padding: 2em;
+take the padding out and add a div to the index and css so what you want the padding for if you don't want it for the header.*/
+
+
+h1{
+  background-color: black;
+  padding: 1em;
+  text-align: center;
+  color: blue;
 }
 
+div{
+  padding: 1.5em;
+}
+
+/* it needs to be blocked before you can move it or you can use width to make it bigger. */
+img{
+  width:45%
+  /*display:block;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+
+h1, h2, h3{
+  font-family: "Fredoka One", bold;
+  color: blue;
+}
+
+h2, h3, p, ul, ol {
+  margin: 1rem;
+}
+
+p{
+  font-size: larger;
+}
+
+ul, ol{
+  padding-left:1em;
+}
+
+/*this is a class inspector this name is made up but must start with a dot*/
+.changeToInline{
+display: inline;
+}
+
+.noPadding{
+  padding:0;
+}
 
 /*
 way to have everything in one font:
@@ -22,5 +82,10 @@ this if for borders:
 type like solid or dash, thickness and color
 
 to get other fonts you can import it through a link from google fonts once you link it in then you add it in into the the body or headers
+
+you can do border as
+border-style
+border-color
+border-width
 
 */

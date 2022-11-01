@@ -1,0 +1,103 @@
+*{
+  border:none;
+  color: white;
+}
+body{
+  background-color: black;
+}
+#wrapper{
+  max-width: 1200px;
+  /*margin-right: auto;*/
+}
+header{
+  height:432px;
+  padding:1em 2em 2em 3em;
+  font-family: sans-serif,cursive;
+}
+nav{
+  background-color:orange;
+  padding:0.5em;
+  margin-bottom: 1em;
+  margin-right: -11.7em;
+  color: orange;
+}
+nav li{
+  display:inline-block;
+  font-size: 1em;
+  font-family: sans-serif,cursive;
+  border-right: solid 1px orange;
+  padding-right: 5em;
+  text-align: center;
+}
+.onepiece{
+  /*width: 100em;*/
+  background-position: center;
+}
+p {
+  padding: 1em;
+}
+
+.paragrahleft{
+  width: 40%;
+  float: left;
+  margin-top: 15em;
+  margin-left: 2%;
+}
+
+.paragrahright{
+  width: 40%;
+  float: right;
+  margin-top: 15em;
+}
+
+svg path:hover{
+  fill:orange;
+}
+
+footer{
+  clear:both;
+  padding:2em;
+}
+/*Episodes page*/
+.episodes{
+  display:flex;
+  flex-wrap: wrap;
+  background-color:orange;
+  /*flex-direction: row; this is for it to be horizontal*/
+  justify-content: space-between;
+  margin-top: 20em;
+  margin-left: 5em;
+}
+
+.card{
+  width: 23%;
+  border:solid 1px gray;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+.card img{
+  width:100%;
+}
+
+.card p{
+  margin:0 0.5em;
+}
+
+.card h2 h3{
+  margin:0.5em 0.5em 0 0.5em;
+}
+
+.cardplay{
+  width: 50px;
+  margin-top:-100px;
+}
+
+.movies{
+  display:flex;
+  flex-wrap: wrap;
+  background-color:orange;
+  /*flex-direction: row; this is for it to be horizontal*/
+  justify-content: space-between;
+  margin-top: 15em;
+  margin-left: 5em;
+}

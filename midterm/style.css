@@ -4,6 +4,7 @@
 }
 body{
   background-color: black;
+  font-family: "Work Sans",sans-serif;
 }
 #wrapper{
   max-width: 1200px;
@@ -37,11 +38,25 @@ p {
   padding: 1em;
 }
 
+/* linking*/
+
+a{
+  color: black;
+}
+a:hover{
+  color:orange;
+  text-decoration: underline;
+}
+a:active{
+  color: green;
+  text-decoration: underline;
+}
+
 .paragrahleft{
   width: 40%;
   float: left;
-  margin-top: 15em;
-  margin-left: 2%;
+  margin-top: 13em;
+  margin-left: 2.5%;
 }
 
 .paragrahright{
@@ -87,10 +102,9 @@ footer{
   margin:0.5em 0.5em 0 0.5em;
 }
 
-.cardplay{
-  width: 50px;
-  margin-top:-100px;
-}
+
+
+
 
 .movies{
   display:flex;

@@ -1,117 +1,200 @@
-*{
-  border:none;
+* {
+  border: none;
   color: white;
 }
-body{
+
+body {
   background-color: black;
-  font-family: "Work Sans",sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-#wrapper{
+
+#wrapper {
   max-width: 1200px;
   /*margin-right: auto;*/
 }
-header{
-  height:432px;
-  padding:1em 2em 2em 3em;
-  font-family: sans-serif,cursive;
+
+header {
+  height: 432px;
+  padding: 1em 2em 2em 3em;
+  font-family: sans-serif, cursive;
 }
-nav{
-  background-color:orange;
-  padding:0.5em;
+
+nav {
+  background-color: orange;
+  padding: 0.5em;
   margin-bottom: 1em;
   margin-right: -11.7em;
   color: orange;
 }
-nav li{
-  display:inline-block;
-  font-size: 1em;
-  font-family: sans-serif,cursive;
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+  font-family: sans-serif, cursive;
   border-right: solid 1px orange;
   padding-right: 5em;
   text-align: center;
+  margin-inline-start: 4.5em;
 }
-.onepiece{
+
+.onepiece {
   /*width: 100em;*/
   background-position: center;
 }
+
 p {
   padding: 1em;
 }
 
 /* linking*/
-
-a{
+a {
   color: black;
 }
-a:hover{
-  color:orange;
-  text-decoration: underline;
-}
-a:active{
-  color: green;
+
+a:hover {
+  color: red;
   text-decoration: underline;
 }
 
-.paragrahleft{
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: gray;
+}
+
+.paragrahleft {
   width: 40%;
   float: left;
   margin-top: 13em;
   margin-left: 2.5%;
 }
 
-.paragrahright{
+.genre-wrapper {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.text-box {
+  background-color:darkgray;
+  margin-top: 1em;
+  margin-left: 1em;
+  color: white;
+  display:inline-block;
+  font-size: 12px;
+}
+
+.paragrahright {
   width: 40%;
   float: right;
   margin-top: 15em;
 }
 
-svg path:hover{
-  fill:orange;
+svg path:hover {
+  fill: orange;
 }
 
-footer{
-  clear:both;
-  padding:2em;
+footer {
+  clear: both;
+  padding: 2em;
 }
+
 /*Episodes page*/
-.episodes{
-  display:flex;
+.episodes {
+  display: flex;
   flex-wrap: wrap;
-  background-color:orange;
+  background-color: black;
   /*flex-direction: row; this is for it to be horizontal*/
   justify-content: space-between;
   margin-top: 20em;
-  margin-left: 5em;
+  margin-left: 12em;
 }
 
-.card{
-  width: 23%;
-  border:solid 1px gray;
+.card {
+  width: 24%;
+  border: solid 0.5px orange;
   border-radius: 5px;
   margin-bottom: 1.5em;
 }
-.card img{
-  width:100%;
+
+.card img {
+  width: 100%;
 }
 
-.card p{
-  margin:0 0.5em;
+.card p {
+  margin: 0 0.5em;
 }
 
-.card h2 h3{
-  margin:0.5em 0.5em 0 0.5em;
+.card h2{
+  margin: 0.5em 0.5em 0 0.5em;
+}
+.card h6{
+  margin-top: none;
+  display: inline;
 }
 
-
-
-
-
-.movies{
-  display:flex;
+.movies {
+  display: flex;
   flex-wrap: wrap;
-  background-color:orange;
+  background-color: black;
   /*flex-direction: row; this is for it to be horizontal*/
   justify-content: space-between;
   margin-top: 15em;
   margin-left: 5em;
+}
+
+/* Dropdown Button */
+.seasons {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+/*the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-seasons {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+.seasons {
+  text-decoration: underline;
+  margin-left: -3%;
+}
+
+.arrow-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown-seasons a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-seasons a:hover {
+  background-color: orange;
+}
+
+.dropdown:hover .dropdown-seasons {
+  display: block;
+}
+
+.dropdown:hover .seasons {
+  background-color: orange;
 }

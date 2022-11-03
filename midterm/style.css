@@ -104,12 +104,15 @@ footer {
 
 /*Episodes page*/
 .episodes {
+  /*display: grid;
+  grid-template-columns:40% 40% 40% 40%;
+  grid-column-gap:1em; this is another option which is a grid*/
   display: flex;
   flex-wrap: wrap;
   background-color: black;
-  /*flex-direction: row; this is for it to be horizontal*/
-  justify-content: space-between;
-  margin-top: 25em;
+    /*flex-direction: row; this is for it to be horizontal
+  justify-content: space-between;*/
+  margin-top: 23em;
   margin-left: 12em;
 }
 

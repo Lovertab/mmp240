@@ -120,7 +120,7 @@ footer {
 }
 
 .card img {
-  width: 100%;
+  max-width:100%;
 }
 
 .card p {

@@ -35,6 +35,7 @@ nav li {
   padding-right: 5em;
   text-align: center;
   margin-inline-start: 4.5em;
+  /*margin: 0 auto; this centers it*/
 }
 
 .onepiece {
@@ -108,7 +109,7 @@ footer {
   background-color: black;
   /*flex-direction: row; this is for it to be horizontal*/
   justify-content: space-between;
-  margin-top: 20em;
+  margin-top: 25em;
   margin-left: 12em;
 }
 
@@ -197,4 +198,13 @@ footer {
 
 .dropdown:hover .seasons {
   background-color: orange;
+}
+
+@media (max-width:575px){
+  .episodes{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+  }
 }

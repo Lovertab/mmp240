@@ -1,1 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  border:none;
+}
+body{
+  font-family: "Work Sans"; sans-serif;
+}
+#wrapper{
+  max-width: 1200px;
+  
 
+}
+p1, h1, h2, h3, nav, article{
+  margin-bottom:1em;
+}
+/* Header Navigation*/
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#dropmenu{
+  /*display: none;*/
+  position: absolute;
+  border: solid 1px green;
+}
+
+#dropmenu ul{
+  list-style-type: none;
+}
+
+.topnav{
+/*  text-align: right;*/
+}
+
+/*Search Program Navigation*/
+.search-program strong a{
+  color:red;
+}
+
+.strong-program a{
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+  padding: 0.5em  0;
+  display:block;
+}
+
+.search-program li{
+  text-align: center;
+  border: solid 1px gray;
+}
+
+.search-program li ul{
+  list-style-type: none;
+  background-color: gray;
+  display: none;
+}
+
+.search-program li: hover ul{
+  display: block;
+}

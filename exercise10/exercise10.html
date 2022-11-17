@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mobile Dropdown Menu</title>
   <style>
-  nav li img{
-    float: right;
-    width: 15px;
-  }
+    nav li img {
+      float: right;
+      width: 15px;
+    }
 
-nav ul{
-  padding: 0;
-  list-style-type: none
-}
+    nav ul {
+      padding: 0;
+      list-style-type: none
+    }
 
-  nav a{ /*the a is the words and its inline but if you want it to have width use block element*/
-    background-color: #ccc;
-    border-bottom: solid 1px #999;
-    color:black;
-    text-decoration: none;
-    display: block;
-    padding:0.5em;
-   }
+    nav a {
+      /*the a is the words and its inline but if you want it to have width use block element*/
+      background-color: #ccc;
+      border-bottom: solid 1px #999;
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+    }
 
-   nav li ul a{
-     background-color: #999;
-     color: white;
-   }
+    nav li ul a {
+      background-color: #999;
+      color: white;
+    }
 
-   nav li ul{
-     display: none;
-   }
+    nav li ul {
+      display: none;
+    }
 
-   nav li:hover ul{
-     display: block;
-   }
-nav img{
-  float:right;
-  width: 15px;
-}
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav img {
+      float: right;
+      width: 15px;
+    }
   </style>
 
 </head>
 
 <body>
-<nav>
-  <ul>
-    <li>
-      <a href="#">Fruits <img src="expand.svg" alt="more"></a>
-      <ul>
-        <li><a href= "#"> Apple</a></li>
-        <li><a href= "#"> Orange</a></li>
-        <li><a href= "#"> Pear</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">Vegetables <img src="expand.svg" alt="more"></a>
-      <ul>
-        <li><a href= "#"> Cabbage</a></li>
-        <li><a href= "#"> Potatoes</a></li>
-        <li><a href= "#"> Squash</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Fruits <img src="expand.svg" alt="more"></a>
+        <ul>
+          <li><a href="#"> Apple</a></li>
+          <li><a href="#"> Orange</a></li>
+          <li><a href="#"> Pear</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Vegetables <img src="expand.svg" alt="more"></a>
+        <ul>
+          <li><a href="#"> Cabbage</a></li>
+          <li><a href="#"> Potatoes</a></li>
+          <li><a href="#"> Squash</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </body>
+
 </html>

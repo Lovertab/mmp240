@@ -1,71 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-*{
-  margin:0;
-  padding:0;
-  border:none;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
-body{
-  font-family: "Work Sans"; sans-serif;
+
+body {
+  font-family: "Work Sans";
+  sans-serif;
   margin: 1em;
 }
-#wrapper{
+
+#wrapper {
   max-width: 1200px;
   margin-left: 0 auto;
   position: relative;
 }
 
-p, h1, h2, h3, nav, article{
-  margin-bottom:1em;
+p, h1, h2, h3, nav, article {
+  margin-bottom: 1em;
+}
+
+.button {
+  padding: 0.5em;
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /* Header Navigation*/
-
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
 
-#dropmenu{
+#dropmenu {
   display: none;
   position: absolute;
-  right:0
-  border: solid 1px green;
-  padding:0.5em;
+  right: 0 border: solid 1px green;
+  padding: 0.5em;
   background-color: #fff;
 }
 
-#dropmenu ul{
+#dropmenu ul {
   list-style-type: none;
 }
+
+#dropmenu li {
+  padding: 0.5em 1em;
+}
+
+#dropmenu input {
+  border: solid 1px gray;
+}
+
 /*
 .topnav{
  text-align: right;
 }*/
-
 /*Search Program Navigation*/
-.search-program strong a{
-  color:red;
+.search-program strong a {
+  color: red;
 }
 
-.strong-program a{
+.strong-program a {
   text-decoration: none;
   color: gray;
   font-weight: 600;
-  padding: 0.5em  0;
-  display:block;
+  padding: 0.5em 0;
+  display: block;
 }
 
-.search-program li{
+.search-program li {
   text-align: center;
   border: solid 1px gray;
+  list-style-type: none;
+  /*this gets rid of the bullet points because it's tthe bigger border around the ul*/
 }
 
-.search-program li ul{
-  list-style-type: none;
+.search-program li ul {
   background-color: gray;
   display: none;
 }
 
-.search-program li:hover ul{
+.search-program li:hover ul {
   display: block;
+}
+
+.search-program img {
+  width: 24px;
+  margin-bottom: -6px;
+}
+
+/* banner style*/
+.banner {
+  background-color: #eee;
+  padding: 2em;
+}
+
+/* Main styles*/
+main ul {
+  /*padding-left: 1em;*/
+  list-style-type: none;
+  /*this is to get rid of the bullet points*/
+}
+
+@media (min-width:768px) {
+  #dropmenu {
+    display: flex;
+    position: static;
+    border: none;
+  }
+
+  #dropmenu ul {
+    display: flex;
+  }
+
+  /*#dropmenu li {
+    display: inline;
+    float: left; thses are other ways
+  }*/
+  .menu-icon {
+    display: none;
+  }
 }

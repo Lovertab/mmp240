@@ -106,7 +106,7 @@ main ul {
   list-style-type: none;
   /*this is to get rid of the bullet points*/
 }
-
+/*media query start here*/
 @media (min-width:768px) {
   #dropmenu {
     display: flex;
@@ -126,30 +126,30 @@ main ul {
     display: none;
   }
 
-  .program-menu{
+  .program-menu {
     display: flex;
     justify-content: space-between;
   }
 
-  .program-menu li{
+  .program-menu li {
     width: 30%;
     position: relative;
   }
 
-  .program-menu li ul{
+  .program-menu li ul {
     position: absolute;
+    left: -1px;
     width: 100%;
   }
 
-  .program-menu li ul li{
+  .program-menu li ul li {
     width: 100%;
     background-color: navy;
   }
 
-  .program-menu li ul li:hover{
+  .program-menu li ul li:hover {
     background-color: green;
   }
+}
 
-
-
-}/* closing mdeai query*/
+/* closing mdeai query*/

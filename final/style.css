@@ -125,4 +125,18 @@ main ul {
   .menu-icon {
     display: none;
   }
-}
+
+  .program-menu{
+    display: flex;
+    justify-content;
+
+  }
+
+  .program-menu li{
+    width: 30%;
+  }
+
+  .program-menu li ul{
+    position: absolute;
+  }
+}/* closing mdeai query*/

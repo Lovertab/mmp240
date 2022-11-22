@@ -128,15 +128,28 @@ main ul {
 
   .program-menu{
     display: flex;
-    justify-content;
-
+    justify-content: space-between;
   }
 
   .program-menu li{
     width: 30%;
+    position: relative;
   }
 
   .program-menu li ul{
     position: absolute;
+    width: 100%;
   }
+
+  .program-menu li ul li{
+    width: 100%;
+    background-color: navy;
+  }
+
+  .program-menu li ul li:hover{
+    background-color: green;
+  }
+
+
+
 }/* closing mdeai query*/

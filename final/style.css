@@ -92,12 +92,19 @@ header {
 .search-program img {
   width: 24px;
   margin-bottom: -6px;
+  transition-property: transform;
+  transition-duration: 0.1s;
+}
+
+.search-program li:hover img{
+  transform: rotate(180deg);
 }
 
 /* banner style*/
 .banner {
   background-color: #eee;
-  padding: 2em;
+  padding: 4em 2em;
+  margin-bottom: 2em;
 }
 
 /* Main styles*/
@@ -150,6 +157,22 @@ main ul {
   .program-menu li ul li:hover {
     background-color: green;
   }
+
+/*main layout*/
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
 }
 
-/* closing mdeai query*/
+.news{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+
+
+
+
+}/* closing mdeai query*/

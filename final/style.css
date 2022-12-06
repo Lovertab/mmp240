@@ -30,6 +30,10 @@ p, h1, h2, h3, nav, article {
   text-decoration: none;
 }
 
+.img-responsive{
+  width:100%;
+}
+
 /* Header Navigation*/
 header {
   display: flex;
@@ -39,7 +43,8 @@ header {
 #dropmenu {
   display: none;
   position: absolute;
-  right: 0 border: solid 1px green;
+  right: 0
+  border: solid 1px green;
   padding: 0.5em;
   background-color: #fff;
 }
@@ -113,6 +118,20 @@ main ul {
   list-style-type: none;
   /*this is to get rid of the bullet points*/
 }
+
+/* Programs Page*/
+.card-link{
+  color:#000;
+  text-decoration:none;
+  transition: all 0.5s;
+  /*transition-property: transform;
+  transition-duration: 0.5s; can add this together*/
+}
+
+.card-link: hover{
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px #888;
+}
 /*media query start here*/
 @media (min-width:768px) {
   #dropmenu {
@@ -162,7 +181,8 @@ main ul {
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1em;
+  /*grid-column-gap: 1em;*/
+  grid-gap: 1em;
 }
 
 .news{
@@ -170,7 +190,12 @@ main{
   grid-column-end: 4;
 }
 
+/*Program Pages*/
 
+.program-title{
+  grid-column-start:1;
+  grid-column-end:5;
+}
 
 
 

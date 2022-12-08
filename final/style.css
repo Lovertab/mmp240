@@ -107,31 +107,10 @@ header {
 
 /* banner style*/
 .banner {
-  position: relative;
   background-color: #eee;
-  /*padding: 4em 2em;*/
+  padding: 4em 2em;
   margin-bottom: 2em;
-}
-/*For Slide show in banner*/
-slideshow-button{
-  font-size: 5em;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-  position:absolute;
-  top: 40%;
-}
-
-.banner-block{
-  padding: 3em;
-  position:absolute;
-  top:0;
-}
-.next{
-  right:0.5em;
-}
-
-.prev{
-  left:0.5em;
+  background-size: cover;
 }
 
 /* Main styles*/

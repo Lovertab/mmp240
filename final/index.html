@@ -7,8 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CUNY Design</title>
   <link rel="stylesheet" href="style.css">
-  <script src="showMenu.js"></script>
-  <script src="slideshow.js"></script> <!-- must link the script for the banner to work-->
+
 </head>
 <body>
   <div id="wrapper">
@@ -60,13 +59,8 @@
       </nav>
     </div> <!--.search-program-->
     <div class="banner">
-      <img src="images/QC.png" alt="Queens College" class="img-responsive" id="banner-img">
-      <a href="#" onclick="slideshowUp();" class="slideshow-button prev"> < </a>
-      <a href="#" onclick="slideshowBack();" class="slideshow-button next"> > </a>
-      <div class="banner-block">
         <h2>Queens College Ranked in Top 25 of Best Public Colleges and Universities for Graphic Design in the Nation</h2>
         <a href="#" class="button">Apply Now</a>
-      </div>
     </div><!--.banner-->
     <main>
       <section class="news">
@@ -101,6 +95,20 @@
     </main>
     <footer>&copy;Copyright 2020 The City University of New York </footer>
   </div> <!--#wrapper-->
+  <script src="easy_background.js"></script> <!-- must link the script for the banner to work-->
+  <script>
+    easy_background(".banner",
+
+      {
+        slide: ["images/QC.png", "images/QC1.png"],
+
+        delay: [2000, 2000, 2000, 2000, 2000]
+      }
+
+
+    );
+  </script>
+
 </body>
 
 </html>

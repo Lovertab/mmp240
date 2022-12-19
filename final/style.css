@@ -7,10 +7,10 @@
 }
 
 body {
-  font-family: "Work Sans";
-  sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin: 1em;
 }
+
 
 #wrapper {
   max-width: 1200px;
@@ -20,14 +20,34 @@ body {
 
 p, h1, h2, h3, nav, article {
   margin-bottom: 1em;
+  color: black;
 }
 
 .button {
   padding: 0.5em;
-  background-color: #000;
-  color: white;
+  background-color: deeppink;
+  color: black;
   border-radius: 10px;
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.button: hover{
+  background-color: blue;
+  color: deeppink;
+  transform:scale(1.05);
+}
+
+ a{
+  color: deeppink;
+}
+
+a: vistied{
+  color:black;
+}
+
+a:hover{
+  color:darkblue;
 }
 
 .img-responsive{
@@ -38,15 +58,19 @@ p, h1, h2, h3, nav, article {
 header {
   display: flex;
   justify-content: space-between;
+  color: darkblue;
+}
+
+header h1 a{
+  color: deeppink;
 }
 
 #dropmenu {
   display: none;
   position: absolute;
   right: 0;
-  border: solid 1px green;
+  border: solid 1px deeppink;
   padding: 0.5em;
-  background-color: #fff;
 }
 
 #dropmenu ul {
@@ -58,7 +82,12 @@ header {
 }
 
 #dropmenu input {
-  border: solid 1px gray;
+  border: solid 1px darkblue;
+}
+
+#dropmenu li:hover ul{
+  display: block;
+  color: lightblue;
 }
 
 /*
@@ -67,12 +96,14 @@ header {
 }*/
 /*Search Program Navigation*/
 .search-program strong a {
-  color: red;
+  color: blue;
+  padding:0.5em;
+
 }
 
 .strong-program a {
   text-decoration: none;
-  color: gray;
+  color: black;
   font-weight: 600;
   padding: 0.5em 0;
   display: block;
@@ -80,13 +111,13 @@ header {
 
 .search-program li {
   text-align: center;
-  border: solid 1px gray;
+  border: solid 1px darkblue;
   list-style-type: none;
   /*this gets rid of the bullet points because it's tthe bigger border around the ul*/
 }
 
 .search-program li ul {
-  background-color: gray;
+  background-color: deeppink;
   display: none;
 }
 
@@ -133,6 +164,7 @@ main ul {
   transform: scale(1.05);
   box-shadow: 5px 5px 10px #888;
 }
+
 /*media query start here*/
 @media (min-width:768px) {
   #dropmenu {
@@ -171,11 +203,11 @@ main ul {
 
   .program-menu li ul li {
     width: 100%;
-    background-color: navy;
+    background-color: lightblue;
   }
 
   .program-menu li ul li:hover {
-    background-color: green;
+    background-color: deeppink;
   }
 
 /*main layout*/
@@ -193,7 +225,7 @@ main{
 
 /*Program Pages*/
 
-.program-title{
+.programs-title{
   grid-column-start:1;
   grid-column-end:5;
 }
